@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+   <h1>Connect Us..</h1><br><br>
+   <form action="../Restaurant(Mini-Project)/Home.html" novalidate onsubmit="return validateForm()">
+       <label>Enter Full Name: </label><input type="text" name="name1" id="fullname" required onblur="validate1()"><br><br>
+       <span id="error1"></span><br><br>
+       <label>Enter Email Address: </label><input type="email" name="email1" id="femail" required onblur="validate2()"><br><br>
+       <span id="error2"></span><br><br>
+       <label>Enter Mobile Number: </label><input type="number" name="numb" id="mobile" required pattern="[0-9]{10}" onblur="validate3()"><br>
+       <span id="error3"></span><br><br>
+       <label>Choose Gender: </label><br>
+       <input type="radio" id="r1" name="gender" value="male"><label>Male</label>&nbsp;&nbsp;&nbsp;&nbsp;
+       <input type="radio" id="r2" name="gender" value="female"><label>Female</label><br><br>
+       <label>Want to Book Table??</label><br>
+       <select name="tables" id="table">
+           <option value="yes">YES</option>
+           <option value="no">NO</option>
+       </select><br><br>
+       <label>Enter the Date you want to book: </label><input type="date"><br><br>
+       <label>Enter the Time Suitable: </label><input type="time"><br><br>
+       <input type="submit" value="save"><br><br>
+       <div id="div1">
+           <i>Email us at:-  chineesecorner@gmail.com</i><br><br>
+           <b>OR</b><br><br>
+           <i>Can Call Us On :-  1234567890</i>
+       </div><br><br>
+       <div id="div2">
+           <img src="images/icon.png" alt="no image" height="200px" width="200px">
+       </div>
+   </form>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="JavaScript/contact.js"></script>
+</body>
+</html>

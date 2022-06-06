@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: white;
+}
+.block{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    clear: right;
+
+}
+.block1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: aquamarine;
+}

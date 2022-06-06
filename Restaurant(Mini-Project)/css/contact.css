@@ -1,0 +1,16 @@
+body{
+    background-color: grey;
+    color: aliceblue;
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    font-family: serif;
+}
+label,input{
+    font-size: 25px;
+}
+#div1{
+    font-size: 15px;
+    color: aquamarine;
+}

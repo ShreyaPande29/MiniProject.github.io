@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed Back Form</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: fantasy;
+            font-size: 60px;
+            color: darkkhaki;
+        }
+        #div1{
+            margin-right: 50px;
+            clear: right;
+            float: right;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>FeedBack Form For Customers</h1>
+    <div id="div1">
+        <embed src="images/costom.webp" height="400px" width="400px"></embed>
+    </div>
+    <form action="../Restaurant(Mini-Project)/Home.html" novalidate onsubmit="return vaildateForm()">
+        <label>Full Name: </label><input type="text" name="fname" id="fname" required onblur="validate1()"><br><br>
+        <span id="error1"></span><br><br>
+        <label>Age: </label><input type="number" name="age" id="fage" min="0" max="100" required onblur="validate2()"><br><br>
+        <span id="error2"></span><br><br>
+        <label>Email: </label><input type="email" name="email" id="femail" required onblur="validate3()"><br><br>
+        <span id="error3"></span><br><br>
+        <label>Mobile Number: </label><input type="number" name="numb" id="fnumb" pattern="[0-9]{10}" required onblur="validate4()"><br><br>
+        <span id="error4"></span><br><br>
+        <label>Visited Date: </label><input type="date"><br><br>
+        <div id="div2">
+            <label for="">Choose Gender: </label><br><br>
+            <input type="radio" id="r1" name="gender" value="male"><label for="">Male</label>
+            <input type="radio" id="r2" name="gender" value="female"><label for="">Female</label><br><br>
+        </div>
+        <label>FeedBack: </label>
+        <textarea name="feed" id="ffeed" cols="30" rows="10"></textarea><br><br>
+        <button type="submit">
+            <img src="images/submit.jpg" alt="no image" height="30px" width="70px">
+        </button>
+    </form>
+    <script src="JavaScript/feebback.js"></script>
+</body>
+</html>
